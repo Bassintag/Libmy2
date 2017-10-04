@@ -5,7 +5,7 @@
 ** Login   <antoine.stempfer@epitech.net>
 ** 
 ** Started on  Wed Oct  4 21:47:06 2017 Antoine Stempfer
-** Last update Wed Oct  4 22:07:58 2017 Antoine Stempfer
+** Last update Wed Oct  4 22:36:31 2017 Antoine Stempfer
 */
 
 #include "my.h"
@@ -141,3 +141,5 @@ const unsigned short	my_ctype[257] = {
   _MY_PUNCT_,
   _MY_CONTROL_
 };
+
+const unsigned short	*my_pctype = my_ctype + 1;

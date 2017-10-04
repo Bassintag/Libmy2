@@ -5,7 +5,7 @@
 ** Login   <antoine.stempfer@epitech.net>
 ** 
 ** Started on  Wed Oct  4 19:24:29 2017 Antoine Stempfer
-** Last update Wed Oct  4 22:10:58 2017 Antoine Stempfer
+** Last update Wed Oct  4 22:36:02 2017 Antoine Stempfer
 */
 
 #ifndef _MY_H_
@@ -47,8 +47,8 @@ char	*my_strncpy(char *dest, const char *src, size_t n);
 #define _MY_DIGIT_P_HEX_	48
 #define _MY_UPPER_P_HEX_	96
 #define _MY_LOWER_P_HEX_	160
-extern const unsigned short	my_ctype[257];
-const unsigned short		*my_pctype = my_ctype + 1;
+extern const unsigned short    	my_ctype[257];
+extern const unsigned short	*my_pctype;
 
 int				my_isalpha(int c);
 int				my_isupper(int c);
