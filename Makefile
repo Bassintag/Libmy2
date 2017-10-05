@@ -5,7 +5,7 @@
 ## Login   <antoine.stempfer@epitech.eu>
 ##
 ## Started on  Wed Oct  4 19:31:48 2017 Antoine Stempfer
-## Last update Thu Oct  5 19:05:53 2017 Antoine Stempfer
+## Last update Thu Oct  5 22:17:30 2017 Antoine Stempfer
 ##
 
 CC	=	gcc
@@ -53,11 +53,19 @@ SRCS	=	src/my_memchr.c \
 		src/my_strtod.c \
 		src/my_strtol.c \
 		src/my_strtoul.c \
+		src/my_calloc.c \
 		src/my_fputc.c \
 		src/my_putc.c \
 		src/my_putchar.c \
 		src/my_fputs.c \
-		src/my_puts.c
+		src/my_puts.c \
+		src/my_list_create.c \
+		src/my_list_free.c \
+		src/my_list_add_head.c \
+		src/my_list_add_tail.c \
+		src/my_list_pop_head.c \
+		src/my_list_pop_tail.c \
+		src/my_list_get.c
 
 all: $(NAME)
 

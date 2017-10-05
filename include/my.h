@@ -5,13 +5,14 @@
 ** Login   <antoine.stempfer@epitech.net>
 ** 
 ** Started on  Wed Oct  4 19:24:29 2017 Antoine Stempfer
-** Last update Thu Oct  5 18:33:59 2017 Antoine Stempfer
+** Last update Thu Oct  5 22:10:19 2017 Antoine Stempfer
 */
 
 #ifndef _MY_H_
 # define _MY_H_
 
 # include <unistd.h>
+# include <stdlib.h>
 
 /*
 **	string
@@ -70,6 +71,7 @@ long int		my_atol(const char *str);
 double			my_strtod(const char *str, char **endptr);
 long int		my_strtol(const char *str, char **endptr, int base);
 unsigned long int	my_strtoul(const char *str, char **endptr, int base);
+void			*my_calloc(size_t size);
 
 /*
 **	stdio
@@ -80,5 +82,31 @@ size_t	my_putc(char c);
 size_t	my_fputs(const char *s, int fd);
 size_t	my_puts(const char *s);
 
+/*
+**	linked lists
+*/
+
+typedef struct		s_llnode
+{
+  struct s_llnode	*next;
+  void			*data;
+}			t_llnode;
+
+typedef struct		s_list
+{
+  t_llnode		*head;
+  t_llnode		*current;
+  t_llnode		*tail;
+  int			size;
+}			t_list;
+
+t_list			*my_list_create(void);
+void			my_list_free(t_list *list);
+void			my_list_destroy(t_list *list);
+int			my_list_add_head(t_list *list, void *data);
+int			my_list_add_tail(t_list *list, void *data);
+void			*my_list_pop_head(t_list *list);
+void			*my_list_pop_tail(t_list *list);
+void			*my_list_get(t_list *list, int index);
 
 #endif
