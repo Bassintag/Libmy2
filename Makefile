@@ -5,7 +5,7 @@
 ## Login   <antoine.stempfer@epitech.eu>
 ##
 ## Started on  Wed Oct  4 19:31:48 2017 Antoine Stempfer
-## Last update Wed Oct  4 22:12:30 2017 Antoine Stempfer
+## Last update Thu Oct  5 19:05:53 2017 Antoine Stempfer
 ##
 
 CC	=	gcc
@@ -14,7 +14,7 @@ AR	=	ar rc
 
 RM	=	rm -f
 
-CFLAGS	=	-Wextra -Wall -Werror -I $(INC) -O2 --pedantic
+CFLAGS	=	-Wextra -Wall -I $(INC) -O2 --pedantic
 
 INC	=	include
 
@@ -47,6 +47,12 @@ SRCS	=	src/my_memchr.c \
 		src/my_isprint.c \
 		src/my_isgraph.c \
 		src/my_iscntrl.c \
+		src/my_atof.c \
+		src/my_atoi.c \
+		src/my_atol.c \
+		src/my_strtod.c \
+		src/my_strtol.c \
+		src/my_strtoul.c \
 		src/my_fputc.c \
 		src/my_putc.c \
 		src/my_putchar.c \

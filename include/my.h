@@ -5,7 +5,7 @@
 ** Login   <antoine.stempfer@epitech.net>
 ** 
 ** Started on  Wed Oct  4 19:24:29 2017 Antoine Stempfer
-** Last update Wed Oct  4 22:36:02 2017 Antoine Stempfer
+** Last update Thu Oct  5 18:33:59 2017 Antoine Stempfer
 */
 
 #ifndef _MY_H_
@@ -33,7 +33,6 @@ char	*my_strncpy(char *dest, const char *src, size_t n);
 /*
 **	ctype
 */
-
 #define	_MY_CONTROL_		1
 #define	_MY_SPACE_		2
 #define	_MY_BLANK_		4
@@ -61,6 +60,16 @@ int				my_isalnum(int c);
 int				my_isprint(int c);
 int				my_isgraph(int c);
 int				my_iscntrl(int c);
+
+/*
+**	stdlib
+*/
+double			my_atof(const char *str);
+int			my_atoi(const char *str);
+long int		my_atol(const char *str);
+double			my_strtod(const char *str, char **endptr);
+long int		my_strtol(const char *str, char **endptr, int base);
+unsigned long int	my_strtoul(const char *str, char **endptr, int base);
 
 /*
 **	stdio
